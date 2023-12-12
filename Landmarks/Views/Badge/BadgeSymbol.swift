@@ -22,7 +22,7 @@ struct BadgeSymbol: View {
                 let spacing = width * 0.030
                 let middle = width * 0.5
                 let topWidth = width * 0.226
-                let topHeight = width * 0.488
+                let topHeight = width * 0.4
                 
 //                TOP PORTION
                 path.addLines([

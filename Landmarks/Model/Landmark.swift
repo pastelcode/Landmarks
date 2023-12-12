@@ -7,17 +7,18 @@
 
 import Foundation
 
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {
     let id: Int
     let name: String
     let park: String
     let state: String
     let description: String
     let imageName: String
+    var isFavorite: Bool
     let coordinates: Coordinates
     
     struct Coordinates: Hashable, Codable {
-        let latitude: String
-        let longitude: String
+        let latitude: Double
+        let longitude: Double
     }
 }
